@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CollegFont';
+  src: url('/fonts/old-english-five/OldEnglishFive.ttf');
+}
+
+@font-face {
+  font-family: 'HollywoodFont';
+  src: url('/public/fonts/hollywood_hills/SF\ Hollywood\ Hills\ Extended\ Italic.ttf');
+}
+
+.college-font{
+  font-family: "CollegFont", sans-serif;
+}
+
+.hollywood-font{
+  font-family: "HollywoodFont", sans-serif;
+}
+
+
