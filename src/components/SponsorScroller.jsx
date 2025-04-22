@@ -10,7 +10,7 @@ const sponsors = [
   "/sponsor.png",
 ];
 
-const Sponsors = () => {
+const SponsorScroller = () => {
   return (
     <div className="w-full py-8 mt-16 overflow-y-hidden">
       <div className="relative w-full overflow-y-hidden">
@@ -62,4 +62,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default SponsorScroller;

@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import Event from "./pages/Event";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
-import Team from "./pages/Team";
+import Sponsors from "./pages/Sponsors";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<Event />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

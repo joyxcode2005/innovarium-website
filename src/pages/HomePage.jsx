@@ -4,12 +4,12 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { CountdownTimer } from "../components/Countdown";
 import { characters } from "../constants";
-import Sponsors from "../components/Sponsors";
+import SponsorScroller from "../components/SponsorScroller";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   // Set your event date here (format: year, month(0-11), day, hour, minute)
   // August 15, 2025, 6:00 PM
-  const eventName = "INNOVARIUM";
 
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -96,7 +96,7 @@ const HomePage = () => {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-screen py-20 text-center">
-        <Sponsors />
+        <SponsorScroller />
         <div className="text-lg md:text-xl text-white mt-7">
           <span className="text-white">
             <span className="college-font flex items-center justify-center gap-2">
@@ -107,12 +107,12 @@ const HomePage = () => {
               />
               Scottish Church College
             </span>
-            Dept. of Computer Science
-            <br /> <span>Presents:</span>
+            <span className="text-sm">Departmentof Computer Science</span>
+            <br /> <span className="mt-5">Presents:</span>
           </span>
         </div>
         <h1 className="hollywood-font text-4xl md:text-6xl lg:text-8xl font-extrabold text-white  tracking-wider mt-3 [text-shadow:_0_0_30px_rgb(128,128,128)]">
-          {eventName}
+          INNOVARIUM
         </h1>
         {/* Event date */}
         <div className="text-lg md:text-3xl font-bold text-white mb-6">
@@ -125,6 +125,7 @@ const HomePage = () => {
           Download Brochure
         </button>
       </div>
+      <Footer />
     </div>
   );
 };
