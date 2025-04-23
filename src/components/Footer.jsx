@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const arrow = (
   <svg
@@ -32,21 +32,21 @@ const Footer = () => (
             target="_blank"
             className="text-xl  cursor-pointer z-12 relative"
           >
-            <FaFacebook />
+            <img src="/Facebook.png" alt="facebook logo" className="w-8" />
           </a>
           <a
             href="https://www.instagram.com/innovarium.scc/"
             target="_blank"
             className="text-xl cursor-pointer z-12 relative"
           >
-            <FaInstagram />
+            <img src="insta.png" alt="instagram" className="w-8" />
           </a>
           <a
             href="https://www.linkedin.com"
             target="_blank"
             className="text-xl cursor-pointer z-12 relative"
           >
-            <FaLinkedinIn />
+            <img src="linkedin.ico" alt="LinkedIn icon" className="w-8" />
           </a>
         </div>
       </section>
@@ -65,7 +65,10 @@ const Footer = () => (
             ["Contact Us", "/contact"],
           ].map(([label, to]) => (
             <li key={to}>
-              <Link to={to} className="flex items-center hover:text-blue-400 relative">
+              <Link
+                to={to}
+                className="flex items-center hover:text-blue-400 relative"
+              >
                 {arrow}
                 {label}
               </Link>
@@ -80,13 +83,22 @@ const Footer = () => (
           Contact Info
         </h3>
         <ul className="space-y-4 text-gray-300">
-          <li>
-            1&3, Urquhart Square, Manicktala, Azad Hind Bag
-            <br />
-            Kolkata, West Bengal 700006
+          <li className="flex items-center gap-2">
+            <IoLocation className="w-6 h-6" />
+            <div>
+              1&3, Urquhart Square,Manicktala,Azad Hind Bag, Kolkata, West
+              Bengal 700006
+            </div>
           </li>
-          <li>+91 9999999999</li>
-          <li>innovarium.scc@gmail.com</li>
+          <li className="flex items-center gap-2">
+            {" "}
+            <FaPhoneAlt />
+            +91 9999999999
+          </li>
+          <li className="flex items-center gap-2">
+            <MdEmail />
+            innovarium.scc@gmail.com
+          </li>
         </ul>
       </section>
     </div>

@@ -95,9 +95,9 @@ const HomePage = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-screen py-20 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-screen py-10 text-center">
         <SponsorScroller />
-        <div className="text-lg md:text-xl text-white mt-7">
+        <div className="text-lg md:text-xl text-white mt-5">
           <span className="text-white">
             <span className="college-font flex items-center justify-center gap-2">
               <img
@@ -107,21 +107,28 @@ const HomePage = () => {
               />
               Scottish Church College
             </span>
-            <span className="text-sm">Departmentof Computer Science</span>
-            <br /> <span className="mt-5">Presents:</span>
+            <span className="text-sm">Department of Computer Science</span>
           </span>
         </div>
         <h1 className="hollywood-font text-4xl md:text-6xl lg:text-8xl font-extrabold text-white  tracking-wider mt-3 [text-shadow:_0_0_30px_rgb(128,128,128)]">
           INNOVARIUM
         </h1>
+        <div className="text-lg md:text-xl font-bold text-white mb-6">
+          Presented by
+          <span className="flex items-center justify-center text-white uppercase gap-2">
+            <img className="w-5" src="/sponsor.png" alt="sponsor" />
+            Title Sponsor Logo
+          </span>
+        </div>
+
         {/* Event date */}
-        <div className="text-lg md:text-3xl font-bold text-white mb-6">
+        <div className="text-lg md:text-3xl font-bold text-white mb-3">
           <span className="text-blue-600">10th May</span>, 2025
         </div>
         {/* Countdown timer */}
         <CountdownTimer />
         {/* Call to action button */}
-        <button className="mt-6 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-bold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
+        <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-bold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
           Download Brochure
         </button>
       </div>

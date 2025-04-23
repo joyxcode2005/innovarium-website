@@ -12,7 +12,7 @@ const sponsors = [
 
 const SponsorScroller = () => {
   return (
-    <div className="w-full py-8 mt-16 overflow-y-hidden">
+    <div className="w-[85%] py-8 mt-16 overflow-y-hidden">
       <div className="relative w-full overflow-y-hidden">
         <div className="flex space-x-12 animate-scroll-sponsors whitespace-nowrap">
           {sponsors.map((src, index) => (
