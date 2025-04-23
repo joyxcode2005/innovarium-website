@@ -3,14 +3,10 @@ import Navbar from "../components/Navbar";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { CountdownTimer } from "../components/Countdown";
-import { characters } from "../constants";
 import SponsorScroller from "../components/SponsorScroller";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
-  // Set your event date here (format: year, month(0-11), day, hour, minute)
-  // August 15, 2025, 6:00 PM
-
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
@@ -97,7 +93,7 @@ const HomePage = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-screen py-10 text-center">
         <SponsorScroller />
-        <div className="text-lg md:text-xl text-white mt-5">
+        <div className="text-lg md:text-xl text-white mt-3">
           <span className="text-white">
             <span className="college-font flex items-center justify-center gap-2">
               <img
@@ -110,14 +106,14 @@ const HomePage = () => {
             <span className="text-sm">Department of Computer Science</span>
           </span>
         </div>
-        <h1 className="hollywood-font text-4xl md:text-6xl lg:text-8xl font-extrabold text-white  tracking-wider mt-3 [text-shadow:_0_0_30px_rgb(128,128,128)]">
+        <h1 className="hollywood-font text-4xl md:text-6xl lg:text-8xl font-extrabold text-white  tracking-wider mt-2 [text-shadow:_0_0_30px_rgb(128,128,128)]">
           INNOVARIUM
         </h1>
-        <div className="text-lg md:text-xl font-bold text-white mb-6">
+        <div className="text-lg md:text-xl font-bold text-white mb-3">
           Presented by
           <span className="flex items-center justify-center text-white uppercase gap-2">
-            <img className="w-5" src="/sponsor.png" alt="sponsor" />
-            Title Sponsor Logo
+            <img className="w-5" src="/sponsor7.png" alt="sponsor" />
+            GeeksForGeeks
           </span>
         </div>
 

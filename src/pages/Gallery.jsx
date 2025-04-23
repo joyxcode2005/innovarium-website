@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Navbar from "../components/Navbar";
 import { photos } from "../constants";
 import Footer from "../components/Footer";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
+
 
 const Gallery = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -14,11 +17,87 @@ const Gallery = () => {
     setSelectedPhoto(null);
   };
 
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
+
   return (
     <div className="relative bg-gradient-to-b from-black via-[#14171d] via-[#111f35] to-[#112951] min-h-screen text-white">
       <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
 
       <Navbar />
+
+      {/* Particles component */}
+      <div className="absolute inset-0 z-0">
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+            background: {
+              color: {
+                value: "transparent",
+              },
+            },
+            fpsLimit: 60,
+            particles: {
+              color: {
+                value: "#ffffff",
+              },
+              links: {
+                enable: false, // Disable linking for cleaner shooting stars
+              },
+              move: {
+                enable: true,
+                direction: "bottom-left",
+                speed: 30, // fast speed to simulate shooting
+                straight: true,
+                outModes: {
+                  default: "out",
+                },
+              },
+              number: {
+                value: 30,
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+              },
+              opacity: {
+                value: 0.9,
+                animation: {
+                  enable: true,
+                  speed: 1,
+                  minimumValue: 0.1,
+                  sync: false,
+                },
+              },
+              shape: {
+                type: "star", // You can experiment with "edge" or "star" too
+              },
+              size: {
+                value: { min: 2, max: 3 },
+                animation: {
+                  enable: true,
+                  speed: 10,
+                  minimumValue: 0.1,
+                  sync: false,
+                },
+              },
+              trail: {
+                enable: true,
+                length: 5,
+                fillColor: "transparent",
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+      </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="text-center mb-16">

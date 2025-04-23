@@ -1,5 +1,5 @@
 export const MemberCard = ({ member }) => (
-  <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+  <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer hover:border-2 border-blue-500"> 
     <div className="p-6 flex flex-col items-center">
       <div className="relative mb-4">
         <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
