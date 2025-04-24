@@ -148,88 +148,88 @@ export const photos = [
 export const teamMembers = {
   heads: [
     {
-      name: "Priya Sharma",
+      name: "_______________",
       role: "Event Director",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 98765 43210",
-      email: "priya@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Arjun Kapoor",
+      name: "_______________",
       role: "Creative Director",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 98765 12345",
-      email: "arjun@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
   ],
   teamLeads: [
     {
-      name: "Neha Gupta",
+      name: "_______________",
       role: "Marketing Lead",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 87654 32109",
-      email: "neha@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Rajesh Kumar",
+      name: "_______________",
       role: "Technical Lead",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 76543 21098",
-      email: "rajesh@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Sanya Malhotra",
+      name: "_______________",
       role: "Talent Coordination Lead",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 65432 10987",
-      email: "sanya@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Vikram Singh",
+      name: "_______________",
       role: "Logistics Lead",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 54321 09876",
-      email: "vikram@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
   ],
   volunteers: [
     {
-      name: "Aisha Patel",
+      name: "_______________",
       role: "Volunteer",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 43210 98765",
-      email: "aisha@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Rohan Mehra",
+      name: "_______________",
       role: "Volunteer",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 32109 87654",
-      email: "rohan@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Zoya Khan",
+      name: "_______________",
       role: "Volunteer",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 21098 76543",
-      email: "zoya@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
     {
-      name: "Kabir Khanna",
+      name: "_______________",
       role: "Volunteer",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-      phone: "+91 10987 65432",
-      email: "kabir@example.com",
+      phone: "_______________",
+      email: "_______________",
     },
   ],
 };
