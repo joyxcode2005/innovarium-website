@@ -91,7 +91,7 @@ const Event = () => {
           <span className="font-extrabold text-white text-5xl [text-shadow:_0_0_30px_rgb(128,128,128)]">
             EVENTS
           </span>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8 place-items-center z-30">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-20 sm:gap-8 place-items-center z-30">
             {events.map((event) => {
               return (
                 <div
