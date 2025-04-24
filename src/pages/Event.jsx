@@ -86,7 +86,7 @@ const Event = () => {
           }}
         />
       </div>
-      <div className="relative z-10">
+      <div className="z-10">
         <div className="flex flex-col gap-6 items-center justify-center flex-wrap py-20 m-12">
           <span className="font-extrabold text-white text-5xl [text-shadow:_0_0_30px_rgb(128,128,128)]">
             EVENTS
@@ -113,7 +113,7 @@ const Event = () => {
                   </div>
                   <div className="h-[40%] text-white bg-slate-800 rounded-ee-xl rounded-es-xl py-4 flex flex-col justify-between">
                     <div className="flex flex-col items-start justify-center px-4">
-                      <p className="text-[1rem] uppercase font-semibold">
+                      <p className="sm:text-[1rem] text-xl uppercase font-semibold">
                         {event.title}
                       </p>
                       <span className="text-white opacity-80">
