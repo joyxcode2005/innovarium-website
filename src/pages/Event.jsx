@@ -116,7 +116,7 @@ const Event = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1 mt-2">
                       <div className="flex flex-col items-center justify-center gap-1 mt-2">
-                        <button className="px-5 sm:px-12 py-1 text-xl bg-gradient-to-r from-green-600 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center mb-1">
+                        <button className="px-5 sm:px-12 py-1 text-xl bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center mb-1">
                           <a href={event.link} target="_blank">
                             REGISTER
                           </a>
@@ -125,10 +125,10 @@ const Event = () => {
                           <a
                             href="/event-brochure.pdf"
                             download={true}
-                            className="flex items-center justify-center gap-2 text-white font-semibold text-[10px] sm:text-sm hover:text-blue-600"
+                            className=" flex items-center justify-center gap-2 text-white font-semibold text-[15px] sm:text-sm hover:text-blue-600"
                           >
                             <IoMdDownload />
-                            Download Event Brochure
+                            Event Brochure
                           </a>
                         </button>
                       </div>
