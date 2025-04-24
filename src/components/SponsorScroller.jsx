@@ -1,13 +1,13 @@
 import React from "react";
 
 const sponsors = [
-  "/sponsor.png",
-  "/sponsor1.png",
-  "/sponsor2.png",
-  "/sponsor3.png",
-  "/sponsor4.png",
-  "/sponsor5.png",
-  "/sponsor6.png",
+  // "/sponsor.png",
+  // "/sponsor1.png",
+  // "/sponsor2.png",
+  // "/sponsor3.png",
+  // "/sponsor4.png",
+  // "/sponsor5.png",
+  // "/sponsor6.png",
 ];
 
 const SponsorScroller = () => {

@@ -86,7 +86,7 @@ const HomePage = () => {
       </div>
 
       {/* Navigation */}
-      <div className="relative z-12">
+      <div className="relative">
         <Navbar />
       </div>
 

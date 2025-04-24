@@ -65,7 +65,7 @@ const Event = () => {
                 },
               },
               shape: {
-                type: "star", // You can experiment with "edge" or "star" too
+                // You can experiment with "edge" or "star" too
               },
               size: {
                 value: { min: 2, max: 3 },
@@ -87,42 +87,36 @@ const Event = () => {
         />
       </div>
       <div className="z-10">
-        <div className="flex flex-col gap-6 items-center justify-center flex-wrap py-20 m-12">
+        <div className="flex flex-col gap-6 items-center justify-center py-20 m-12">
           <span className="font-extrabold text-white text-5xl [text-shadow:_0_0_30px_rgb(128,128,128)]">
             EVENTS
           </span>
-          <div className="flex flex-wrap gap-8 items-center justify-center ">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8 place-items-center z-30">
             {events.map((event) => {
               return (
                 <div
-                  className="h-[580px] w-[300px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 rounded-xl bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
+                  className="w-[180px] h-[400px] sm:h-[580px] sm:w-[300px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 rounded-xl bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
                   key={event.title}
                 >
                   <div className="h-[50%]">
                     <img
                       src={event.image}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        borderTopLeftRadius: "10px",
-                        borderTopRightRadius: "10px",
-                      }}
+                      className="w-full h-full rounded-t-xl rounded-bl-xl object-cover "
                       alt=""
                     />
                   </div>
                   <div className="h-[40%] text-white bg-slate-800 rounded-ee-xl rounded-es-xl py-4 flex flex-col justify-between">
                     <div className="flex flex-col items-start justify-center px-4">
-                      <p className="sm:text-[1rem] text-xl uppercase font-semibold">
+                      <p className="sm:text-[1rem] text-[12px] uppercase font-semibold">
                         {event.title}
                       </p>
-                      <span className="text-white opacity-80">
+                      <span className="text-white opacity-80 text-xs sm:text-sm">
                         ({event.eventname})
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1 mt-2">
                       <div className="flex flex-col items-center justify-center gap-1 mt-2">
-                        <button className="px-12 py-1 text-xl bg-gradient-to-r from-green-600 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center mb-1">
+                        <button className="px-5 sm:px-12 py-1 text-xl bg-gradient-to-r from-green-600 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center mb-1">
                           <a href={event.link} target="_blank">
                             REGISTER
                           </a>
@@ -131,7 +125,7 @@ const Event = () => {
                           <a
                             href="/event-brochure.pdf"
                             download={true}
-                            className="flex items-center justify-center gap-2 text-white font-semibold text-sm hover:text-blue-600"
+                            className="flex items-center justify-center gap-2 text-white font-semibold text-[10px] sm:text-sm hover:text-blue-600"
                           >
                             <IoMdDownload />
                             Download Event Brochure
