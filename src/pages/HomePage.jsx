@@ -112,7 +112,7 @@ const HomePage = () => {
         <div className="text-lg md:text-xl font-bold text-white mb-3">
           Presented by
           <span className="flex items-center justify-center text-white uppercase gap-2">
-            <img className="w-5" src="" alt="sponsor" />
+            <img className="w-5" src="" alt="" />
             Title Sponsor
           </span>
         </div>

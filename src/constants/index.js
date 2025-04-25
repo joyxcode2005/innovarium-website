@@ -11,137 +11,191 @@ export const events = [
     id: 1,
     title: "Operation Kingscode.",
     eventname: "Capture the flag",
-    image: "/event-cft.png",
+    image: "/events/event-cft.png",
     link: "",
   },
   {
     id: 2,
     title: "Algogen",
     eventname: "Coding challenge",
-    image: "/event-coding.png",
+    image: "/events/event-coding.png",
     link: "",
   },
   {
     id: 3,
     title: "Quick Response Refinement",
     eventname: "Game in QR",
-    image: "/event-game_in-qr.png",
+    image: "/events/event-game_in-qr.png",
     link: "",
   },
   {
     id: 4,
     title: "SoapBox Trivia",
     eventname: "Quiz",
-    image: "/event-quiz.png",
+    image: "/events/event-quiz.png",
     link: "",
   },
   {
     id: 5,
     title: "Summit of the High Table",
     eventname: "Debate",
-    image: "/event-debate.png",
+    image: "/events/event-debate.png",
     link: "",
   },
   {
     id: 6,
     title: "Conquerer of the seven spectrums",
     eventname: "Digital Art",
-    image: "/event-digital_art.png",
+    image: "/events/event-digital_art.png",
     link: "",
   },
   {
     id: 7,
     title: "The NEXUS SPARK",
     eventname: "Tech Pitch",
-    image: "/event-tech_pitch.png",
+    image: "/events/event-tech_pitch.png",
     link: "",
   },
   {
     id: 8,
     title: "INGLOURIOUS STRIKERS",
     eventname: "PES E-Sports",
-    image: "/event-pes_e-sports.png",
+    image: "/events/event-pes_e-sports.png",
     link: "",
   },
   {
     id: 9,
     title: "Mission: Headshort protocol",
     eventname: "BGMI E-Sports",
-    image: "/event-bgmi.png",
+    image: "/events/event-bgmi.png",
     link: "",
-  },
-];
-
-export const colors = {
-  primary: "#000926",
-  primaryLight: "rgba(0, 9, 38, 0.1)",
-  secondary: "#8ebffa",
-  text: "#ffffff",
-};
-
-export const characters = [
-  {
-    id: 1,
-    src: "./pic1.png",
-    alt: "Character 1",
-    position: "top-0 left-0",
-    opacity: "opacity-30",
-  },
-  {
-    id: 2,
-    src: "./pic2.png",
-    alt: "Character 2",
-    position: "top-0 right-0",
-    opacity: "opacity-40",
-  },
-  {
-    id: 3,
-    src: "./pic3.png",
-    alt: "Character 3",
-    position: "bottom-0 left-0",
-    opacity: "opacity-30",
-  },
-  {
-    id: 4,
-    src: "./pic4.png",
-    alt: "Character 4",
-    position: "bottom-0 right-0",
-    opacity: "opacity-40",
   },
 ];
 
 export const photos = [
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Mumbai Film Festival",
+    src: "/gallery/1.jpg",
+    alt: "Gallery Image 1",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "IIFA Awards",
+    src: "/gallery/2.jpg",
+    alt: "Gallery Image 2",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Filmfare Awards",
+    src: "/gallery/3.jpg",
+    alt: "Gallery Image 3",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Screen Awards",
+    src: "/gallery/4.jpg",
+    alt: "Gallery Image 4",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Zee Cine Awards",
+    src: "/gallery/5.jpg",
+    alt: "Gallery Image 5",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Star Guild Awards",
+    src: "/gallery/6.jpg",
+    alt: "Gallery Image 6",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Stardust Awards",
+    src: "/gallery/7.jpg",
+    alt: "Gallery Image 7",
   },
   {
-    src: "https://media.telanganatoday.com/wp-content/uploads/2022/11/Colorful-end-to-ATMOS-Tech-Fest-at-BITS-Pilani-Hyderabad.jpg",
-    alt: "Mirchi Music Awards",
+    src: "/gallery/8.jpg",
+    alt: "Gallery Image 8",
+  },
+  {
+    src: "/gallery/9.jpg",
+    alt: "Gallery Image 9",
+  },
+  {
+    src: "/gallery/10.jpg",
+    alt: "Gallery Image 10",
+  },
+  {
+    src: "/gallery/11.jpg",
+    alt: "Gallery Image 11",
+  },
+  {
+    src: "/gallery/12.jpg",
+    alt: "Gallery Image 12",
+  },
+  {
+    src: "/gallery/13.jpg",
+    alt: "Gallery Image 13",
+  },
+  {
+    src: "/gallery/14.jpg",
+    alt: "Gallery Image 14",
+  },
+  {
+    src: "/gallery/15.jpg",
+    alt: "Gallery Image 15",
+  },
+  {
+    src: "/gallery/16.jpg",
+    alt: "Gallery Image 16",
+  },
+  {
+    src: "/gallery/17.jpg",
+    alt: "Gallery Image 17",
+  },
+  {
+    src: "/gallery/18.jpg",
+    alt: "Gallery Image 18",
+  },
+  {
+    src: "/gallery/20.jpg",
+    alt: "Gallery Image 20",
+  },
+  {
+    src: "/gallery/21.jpg",
+    alt: "Gallery Image 21",
+  },
+  {
+    src: "/gallery/22.jpg",
+    alt: "Gallery Image 22",
+  },
+  {
+    src: "/gallery/23.jpg",
+    alt: "Gallery Image 23",
+  },
+  {
+    src: "/gallery/24.jpg",
+    alt: "Gallery Image 24",
+  },
+  {
+    src: "/gallery/25.jpg",
+    alt: "Gallery Image 25",
+  },
+  {
+    src: "/gallery/26.jpg",
+    alt: "Gallery Image 26",
+  },
+  {
+    src: "/gallery/27.jpg",
+    alt: "Gallery Image 27",
+  },
+  {
+    src: "/gallery/28.jpg",
+    alt: "Gallery Image 28",
+  },
+  {
+    src: "/gallery/29.jpg",
+    alt: "Gallery Image 29",
+  },
+  {
+    src: "/gallery/30.jpg",
+    alt: "Gallery Image 30",
+  },
+  {
+    src: "/gallery/31.jpg",
+    alt: "Gallery Image 31",
+  },
+  {
+    src: "/gallery/32.jpg",
+    alt: "Gallery Image 32",
   },
 ];
 
@@ -183,7 +237,7 @@ export const teamMembers = {
     },
     {
       name: "_______________",
-      role: "Talent Coordination Lead",
+      role: "Talent Coordinator",
       image:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
       phone: "_______________",

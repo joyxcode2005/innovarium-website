@@ -84,16 +84,18 @@ const Footer = () => (
         </h3>
         <ul className="space-y-4 text-gray-300">
           <li className="flex items-center gap-2">
-            <IoLocation className="w-6 h-6" />
-            <div>
-              1&3, Urquhart Square,Manicktala,Azad Hind Bag, Kolkata, West
-              Bengal 700006
-            </div>
+            <a href="https://www.google.com/maps/dir//Scottish+Church+College+Comp.+Sc+Dept,+3,+Urquhart+Square,+Manicktala,+Hedua,+Kolkata,+West+Bengal+700006/@22.5869415,88.3647069,17z/data=!4m18!1m8!3m7!1s0x3a027649c496b37f:0x406d4623bacc1643!2sScottish+Church+College+Comp.+Sc+Dept!8m2!3d22.5869415!4d88.369213!15sChdzY290dGlzaCBjaHVyY2ggY29sbGVnZZIBEWNocmlzdGlhbl9jb2xsZWdlqgE_EAEyHhABIhrigV2BDyW_lPazuDhzdxJFUYqEUGOIKGVwZDIbEAIiF3Njb3R0aXNoIGNodXJjaCBjb2xsZWdl4AEA!16s%2Fg%2F11f3s1z672!4m8!1m0!1m5!1m1!1s0x3a027649c496b37f:0x406d4623bacc1643!2m2!1d88.369231!2d22.586936!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="flex items-center gap-2 text-gray-300 hover:text-blue-400">
+              <IoLocation className="w-6 h-6" />
+              <div>
+                1&3, Urquhart Square,Manicktala,Azad Hind Bag, Kolkata, West
+                Bengal 700006
+              </div>
+            </a>
           </li>
           <li className="flex items-center gap-2">
             {" "}
             <FaPhoneAlt />
-            +91 9999999999
+            +91 8207030317
           </li>
           <li className="flex items-center gap-2">
             <MdEmail />
