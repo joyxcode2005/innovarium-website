@@ -34,19 +34,24 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="w-[50%] z-20 absolute top-2 left-1/4 mx-auto bg-transparent border-white border-2 rounded-[50px] my-5 px-8 py-4 hidden md:block">
-        <ul className="flex justify-center gap-4 list-none m-0 p-0">
-          {navLinks.map((link) => (
-            <li key={link.name} className="text-white text-lg font-semibold">
-              <Link
-                to={link.path}
-                className="hover:text-blue-500 transition duration-300 p-1 uppercase"
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <nav className="w-full mx-auto relative z-50 px-8 py-4 hidden md:block">
+        <div className="flex items-center justify-between">
+          <div className="logo">
+            <img src="/logo.png" alt="logo" className="w-36" />
+          </div>
+          <ul className="flex justify-center gap-12 list-none m-0 p-0">
+            {navLinks.map((link) => (
+              <li key={link.name} className="text-white text-lg font-semibold">
+                <Link
+                  to={link.path}
+                  className="hover:text-blue-500 transition duration-300 p-1 uppercase"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
 
       {/* Mobile Navigation */}

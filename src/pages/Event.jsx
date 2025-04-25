@@ -16,7 +16,7 @@ const Event = () => {
   }, []);
   return (
     <div className="bg-gradient-to-b from-black via-[#14171d] via-[#111f35] to-[#112951] overflow-hidden ">
-      <div className="relative">
+      <div className="absolute top-0 left-0 right-0">
         <Navbar />
       </div>
       {/* Particles component */}
@@ -87,45 +87,46 @@ const Event = () => {
         />
       </div>
       <div className="z-10">
-        <div className="flex flex-col gap-6 items-center justify-center py-20 m-12">
+        <div className="flex flex-col gap-6 items-center justify-center py-20 mt-5 mb-36">
           <span className="font-extrabold text-white text-5xl [text-shadow:_0_0_30px_rgb(128,128,128)]">
             EVENTS
           </span>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-20 sm:gap-8 place-items-center z-30">
+
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 place-items-center z-30">
             {events.map((event) => {
               return (
                 <div
-                  className="w-[180px] h-[400px] sm:h-[580px] sm:w-[300px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 rounded-xl bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
+                  className="w-[180px] h-[480px] sm:h-[580px] sm:w-[310px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
                   key={event.title}
                 >
-                  <div className="h-[50%]">
+                  <div className="h-[60%]">
                     <img
                       src={event.image}
-                      className="w-full h-full rounded-t-xl rounded-bl-xl object-cover "
+                      className="w-full h-full object-cover"
                       alt=""
                     />
                   </div>
-                  <div className="h-[40%] text-white bg-slate-800 rounded-ee-xl rounded-es-xl py-4 flex flex-col justify-between">
+                  <div className="h-[40%] text-white bg-slate-800 py-2 flex flex-col justify-between">
                     <div className="flex flex-col items-start justify-center px-4">
-                      <p className="sm:text-[1rem] text-[12px] uppercase font-semibold">
+                      <p className="sm:text-[25px] text-[18px] uppercase font-semibold font-mono text-white">
                         {event.title}
                       </p>
-                      <span className="text-white opacity-80 text-xs sm:text-sm">
+                      <span className="text-white opacity-80 w-full text-[11px] sm:text-sm ">
                         ({event.eventname})
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1 mt-2">
-                      <div className="flex flex-col items-center justify-center gap-1 mt-2">
-                        <button className="px-5 sm:px-12 py-1 text-xl bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center mb-1">
+                      <div className="flex flex-col items-center justify-center gap-1 mt-1">
+                        <button className="px-2 sm:px-12 py-1 text-xs sm:text-lg bg-gradient-to-r from-blue-950 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center">
                           <a href={event.link} target="_blank">
                             REGISTER
                           </a>
                         </button>
-                        <button className="text-sm font-semibold  self-start mb-1 flex items-center justify-center gap-2 px-4 py-1 text-blue-600 rounded-2xl">
+                        <button className="text-sm self-start mb-1 flex items-center justify-center gap-2 px-4 text-blue-600 rounded-2xl">
                           <a
                             href="/event-brochure.pdf"
                             download={true}
-                            className=" flex items-center justify-center gap-2 text-white font-semibold text-[15px] sm:text-sm hover:text-blue-600"
+                            className=" flex items-center justify-center gap-2 text-white text-[15px] sm:text-lg hover:text-blue-600"
                           >
                             <IoMdDownload />
                             Event Brochure

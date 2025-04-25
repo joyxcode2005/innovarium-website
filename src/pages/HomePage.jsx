@@ -86,15 +86,15 @@ const HomePage = () => {
       </div>
 
       {/* Navigation */}
-      <div className="relative">
+      <div className="absolute top-0 left-0 right-0">
         <Navbar />
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-screen py-10 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-screen py-5 text-center">
         <SponsorScroller />
         <div className="text-lg md:text-xl text-white mt-3">
-          <span className="text-white">
+          <span className="text-white flex flex-col items-center justify-center -gap-4">
             <span className="college-font flex items-center justify-center gap-2">
               <img
                 src="https://www.scottishchurch.ac.in/images/logo.png"
@@ -103,28 +103,30 @@ const HomePage = () => {
               />
               Scottish Church College
             </span>
-            <span className="text-sm">Department of Computer Science</span>
+            <span className="text-xs sm:text-xl font-mono">
+              Department of Computer Science
+            </span>
           </span>
         </div>
-        <h1 className="hollywood-font text-4xl md:text-6xl lg:text-8xl font-extrabold text-white  tracking-wider mt-2 [text-shadow:_0_0_30px_rgb(128,128,128)]">
+        <h1 className="hollywood-font text-5xl lg:text-9xl text-white tracking-wider mt-4 sm:-mt-2 [text-shadow:_0_0_30px_rgb(128,128,128)]">
           INNOVARIUM
         </h1>
-        <div className="text-lg md:text-xl font-bold text-white mb-3">
+        <div className="text-sm md:text-2xl text-white tangs-font">
           Presented by
           <span className="flex items-center justify-center text-white uppercase gap-2">
             <img className="w-5" src="" alt="" />
-            Title Sponsor
+            Name of the Title Sponsor
           </span>
         </div>
 
         {/* Event date */}
-        <div className="text-lg md:text-3xl font-bold text-white mb-3">
-          <span className="text-blue-600">10th May</span>, 2025
+        <div className="text-lg md:text-3xl font-semibold comming-soon-font text-white mb-4 mt-4">
+          <span className="text-blue-400 ">10th May</span>, 2025
         </div>
         {/* Countdown timer */}
         <CountdownTimer />
         {/* Call to action button */}
-        <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-bold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
+        <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
           Download Brochure
         </button>
       </div>

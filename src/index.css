@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Tagesschrift';
+  src: url('/fonts/Tagesschrift/Tagesschrift-Regular.ttf');
+}
+
+@font-face {
   font-family: 'CollegFont';
   src: url('/fonts/old-english-five/OldEnglishFive.ttf');
 }
@@ -12,12 +17,25 @@
   src: url('/fonts/hollywood_hills/SF\ Hollywood\ Hills\ Extended\ Italic.ttf');
 }
 
+@font-face{
+  font-family: "CommingSoon";
+  src: url('/fonts/ComingSoon-Regular.ttf');
+}
+
+.comming-soon-font{
+  font-family: "CommingSoon", sans-serif;
+}
+
 .college-font{
   font-family: "CollegFont", sans-serif;
 }
 
 .hollywood-font{
   font-family: "HollywoodFont", sans-serif;
+}
+
+.tangs-font{
+  font-family: "Tagesschrift", sans-serif;
 }
 
 

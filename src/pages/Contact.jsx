@@ -16,7 +16,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="bg-gradient-to-b from-black via-[#14171d] via-[#111f35] to-[#112951]  min-h-screen text-white">
-      <div className="relative">
+      <div className="absolute top-0 left-0 right-0">
         <Navbar />
       </div>
       {/* Particles component */}

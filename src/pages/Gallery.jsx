@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
-
 const Gallery = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
@@ -29,7 +28,9 @@ const Gallery = () => {
     <div className="relative bg-gradient-to-b from-black via-[#14171d] via-[#111f35] to-[#112951] min-h-screen text-white">
       <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
 
-      <Navbar />
+      <div className="absolute top-0 left-0 right-0">
+        <Navbar />
+      </div>
 
       {/* Particles component */}
       <div className="absolute inset-0 z-0">
@@ -100,10 +101,12 @@ const Gallery = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <div className="font-extrabold text-white text-5xl [text-shadow:_0_0_30px_rgb(128,128,128)] mt-12">
             GALLERY
           </div>
+          <br />
+          <span className="text-xl italic text-white">Relive the Unforgettable Highlights and Cherished Memories of Innovarioum 1.0 (2022)</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
