@@ -1,19 +1,19 @@
 import React from "react";
 
 const sponsors = [
-  // "/sponsor.png",
-  // "/sponsor1.png",
-  // "/sponsor2.png",
-  // "/sponsor3.png",
-  // "/sponsor4.png",
-  // "/sponsor5.png",
-  // "/sponsor6.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
+  // "/sponsors/sponsor1.png",
 ];
 
 const SponsorScroller = () => {
   return (
-    <div className="w-[85%] py-8 mt-16 overflow-y-hidden">
-      <div className="relative w-full overflow-y-hidden">
+    <div className="w-[85%] h-full mt-16 overflow-y-hidden ">
+      <div className="w-full overflow-y-hidden">
         <div className="flex space-x-12 animate-scroll-sponsors whitespace-nowrap">
           {sponsors.map((src, index) => (
             <img

@@ -93,7 +93,7 @@ const HomePage = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-screen py-5 text-center">
         <SponsorScroller />
-        <div className="text-lg md:text-xl text-white mt-3">
+        <div className="text-lg md:text-xl text-white mt-4">
           <span className="text-white flex flex-col items-center justify-center -gap-4">
             <span className="college-font flex items-center justify-center gap-2">
               <img

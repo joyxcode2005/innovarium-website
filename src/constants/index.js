@@ -296,3 +296,16 @@ export const teamMembers = {
     },
   ],
 };
+
+export const socailMediaPartners = [
+  {
+    id: 1,
+    name: "Ek Jholoke Kolkata",
+    image: "/sponsors/sponsor1.png",
+  },
+  {
+    id: 2,
+    name: "50 Shades of Slay",
+    image: "/sponsors/sponsor2.png",
+  },
+]

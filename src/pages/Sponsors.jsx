@@ -3,15 +3,16 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+import { socailMediaPartners } from "../constants";
 
 const Sponsors = () => {
-    const particlesInit = useCallback(async (engine) => {
-      await loadSlim(engine);
-    }, []);
-  
-    const particlesLoaded = useCallback(async (container) => {
-      console.log(container);
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
   return (
     <div className="relative bg-gradient-to-b from-black via-[#14171d] via-[#111f35] to-[#112951] min-h-screen text-white">
       <div className="absolute top-0 left-0 right-0">
@@ -183,6 +184,49 @@ const Sponsors = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Social Media Partners */}
+      <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 bg-opacity-50 relative z-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-2">
+              <span className="inline-block px-4 py-1 bg-green-600 rounded-full mb-4">
+                Social Media Partners
+              </span>
+            </h2>
+            <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mb-8"></div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Can be repeated for each stall partner */}
+            {socailMediaPartners.map((partner) => (
+              <div
+                key={partner.id}
+                className="bg-gray-800 rounded-lg shadow-md p-6 border-t-2 border-green-500 hover:shadow-green-500/40 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center justify-center mb-4">
+                    <img
+                      src={partner.image}
+                      alt=""
+                      className="w-32 h-32 border-4 border-green-500 rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-2xl uppercase font-bold text-white mb-2">
+                    {partner.name}
+                  </h3>
+                  <div className="flex items-center justify-center space-x-4">
+                    <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                    <span className="text-lg text-gray-400">
+                      Social Media Partner #{partner.id}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
