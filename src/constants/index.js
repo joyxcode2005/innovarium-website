@@ -13,6 +13,7 @@ export const events = [
     eventname: "Capture the flag",
     image: "/events/1.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const events = [
     eventname: "Coding challenge",
     image: "/events/2.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const events = [
     eventname: "Game in QR",
     image: "/events/3.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const events = [
     eventname: "Quiz",
     image: "/events/4.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 5,
@@ -41,6 +45,7 @@ export const events = [
     eventname: "Debate",
     image: "/events/5.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ export const events = [
     eventname: "Digital Art",
     image: "/events/6.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 7,
@@ -55,6 +61,7 @@ export const events = [
     eventname: "Tech Pitch",
     image: "/events/7.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 8,
@@ -62,13 +69,15 @@ export const events = [
     eventname: "PES E-Sports",
     image: "/events/8.png",
     link: "",
+    brochureLink: ""
   },
   {
     id: 9,
-    title: "Mission: Headshort protocol",
+    title: "Mission Impossible: Headshort protocol",
     eventname: "BGMI E-Sports",
     image: "/events/9.png",
     link: "",
+    brochureLink: ""
   },
 ];
 

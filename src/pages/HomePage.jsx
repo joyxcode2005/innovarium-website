@@ -121,14 +121,16 @@ const HomePage = () => {
 
         {/* Event date */}
         <div className="text-lg md:text-3xl font-semibold comming-soon-font text-white mb-4 mt-4">
-          <span className="text-blue-400 ">10th May</span>, 2025
+          <span className="text-blue-400 ">10th and 11th May</span> , 2025
         </div>
         {/* Countdown timer */}
         <CountdownTimer />
         {/* Call to action button */}
-        <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
-          Download Brochure
-        </button>
+        <a href="/event_brochure.pdf" download={true}>
+          <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
+            Download Brochure
+          </button>
+        </a>
       </div>
       <Footer />
     </div>

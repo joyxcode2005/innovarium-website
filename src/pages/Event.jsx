@@ -124,8 +124,7 @@ const Event = () => {
                         </button>
                         <button className="text-sm self-start mb-1 flex items-center justify-center gap-2 px-4 text-blue-600 rounded-2xl">
                           <a
-                            href="/event-brochure.pdf"
-                            download={true}
+                            href={event.brochureLink}
                             className=" flex items-center justify-center gap-2 text-white text-[15px] sm:text-lg hover:text-blue-600"
                           >
                             <IoMdDownload />
