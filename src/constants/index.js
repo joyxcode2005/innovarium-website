@@ -20,7 +20,7 @@ export const events = [
     title: "Algogen",
     eventname: "Coding challenge",
     image: "/events/2.png",
-    link: "",
+    link: "https://forms.gle/3rFaj2m9jJ9Kn99bA",
     brochureLink: ""
   },
   {
@@ -28,7 +28,7 @@ export const events = [
     title: "Quick Response Refinement",
     eventname: "Game in QR",
     image: "/events/3.png",
-    link: "",
+    link: "https://forms.gle/xr7vj87ygrLaRzL16",
     brochureLink: ""
   },
   {
@@ -36,7 +36,7 @@ export const events = [
     title: "SoapBox Trivia",
     eventname: "Quiz",
     image: "/events/4.png",
-    link: "",
+    link: "https://forms.gle/6Lzy5oP8bjJmB9U3A",
     brochureLink: ""
   },
   {
@@ -44,7 +44,7 @@ export const events = [
     title: "Summit of the High Table",
     eventname: "Debate",
     image: "/events/5.png",
-    link: "",
+    link: "https://forms.gle/XSYmYYJH37879jQt8",
     brochureLink: ""
   },
   {
@@ -52,7 +52,7 @@ export const events = [
     title: "Conquerer of the seven spectrums",
     eventname: "Digital Art",
     image: "/events/6.png",
-    link: "",
+    link: "https://forms.gle/RsnMbvYLKPzkuF9D6",
     brochureLink: ""
   },
   {
@@ -60,7 +60,7 @@ export const events = [
     title: "The NEXUS SPARK",
     eventname: "Tech Pitch",
     image: "/events/7.png",
-    link: "",
+    link: "https://forms.gle/4j9Po4EuwtWTuK8F6",
     brochureLink: ""
   },
   {
@@ -68,7 +68,7 @@ export const events = [
     title: "INGLOURIOUS STRIKERS",
     eventname: "PES E-Sports",
     image: "/events/8.png",
-    link: "",
+    link: "https://forms.gle/d9mcgEoKbKveY4nr5",
     brochureLink: ""
   },
   {
@@ -76,7 +76,7 @@ export const events = [
     title: "Mission Impossible: Headshort protocol",
     eventname: "BGMI E-Sports",
     image: "/events/9.png",
-    link: "",
+    link: "https://forms.gle/6VbwChqjU95o18xg7",
     brochureLink: ""
   },
 ];

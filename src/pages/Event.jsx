@@ -96,7 +96,7 @@ const Event = () => {
             {events.map((event) => {
               return (
                 <div
-                  className="w-[180px] h-[480px] sm:h-[580px] sm:w-[310px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
+                  className="w-[190px] h-[480px] sm:h-[580px] sm:w-[310px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
                   key={event.title}
                 >
                   <div className="h-[60%]">
@@ -108,20 +108,26 @@ const Event = () => {
                   </div>
                   <div className="h-[40%] text-white bg-slate-800 py-2 flex flex-col justify-between">
                     <div className="flex flex-col items-start justify-center px-4">
-                      <p className="sm:text-[25px] text-[18px] uppercase font-semibold font-mono text-white">
-                        {event.title}
-                      </p>
+                      {event.title.length < 30 ? (
+                        <p className="sm:text-[25px] text-[18px] uppercase font-semibold font-mono text-white">
+                          {event.title}
+                        </p>
+                      ) : (
+                        <p className="sm:text-[25px] text-[15px] uppercase font-semibold font-mono text-white">
+                          {event.title}
+                        </p>
+                      )}
                       <span className="text-white opacity-80 w-full text-[11px] sm:text-sm ">
                         ({event.eventname})
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1 mt-2">
                       <div className="flex flex-col items-center justify-center gap-1 mt-1">
-                        <button className="px-2 sm:px-12 py-1 text-xs sm:text-lg bg-gradient-to-r from-blue-950 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center">
-                          <a href={event.link} target="_blank">
+                        <a href={event.link} target="_blank">
+                          <button className="px-2 sm:px-12 py-1 text-xs sm:text-lg bg-gradient-to-r from-blue-950 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center">
                             REGISTER
-                          </a>
-                        </button>
+                          </button>
+                        </a>
                         <button className="text-sm self-start mb-1 flex items-center justify-center gap-2 px-4 text-blue-600 rounded-2xl">
                           <a
                             href={event.brochureLink}
