@@ -33,15 +33,15 @@ const Loader = () => {
   }, [progress]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-black text-blue-400 font-mono">
+    <div className="flex flex-col items-center justify-center h-screen bg-black text-[#00C37F] font-mono">
       <div className="w-full max-w-xl">
         {/* Title with Hollywood style */}
         <div className="mb-10 text-center">
           <h1 className="text-6xl mb-1 tracking-widest">DIRECTOR'S CUT</h1>
           <div className="flex items-center justify-center mb-2">
-            <div className="border-t-2 border-blue-400 w-12"></div>
+            <div className="border-t-2 border-[#00C37F] w-12"></div>
             <span className="mx-3 text-lg">LOADING PREVIEW</span>
-            <div className="border-t-2 border-blue-400 w-12"></div>
+            <div className="border-t-2 border-[#00C37F] w-12"></div>
           </div>
           <p className="text-sm opacity-70">
             TAKE {scene} • FRAME {frames}
@@ -54,7 +54,7 @@ const Loader = () => {
             {Array.from({ length: 10 }).map((_, i) => (
               <div
                 key={i}
-                className="w-4 h-4 bg-black border-2 border-blue-400"
+                className="w-4 h-4 bg-black border-2 border-[#00C37F]"
               ></div>
             ))}
           </div>
@@ -63,18 +63,18 @@ const Loader = () => {
             {Array.from({ length: 10 }).map((_, i) => (
               <div
                 key={i}
-                className="w-4 h-4 bg-black border-2 border-blue-400"
+                className="w-4 h-4 bg-black border-2 border-[#00C37F]"
               ></div>
             ))}
           </div>
 
-          <div className="relative h-12 border-2 border-blue-400 my-4 overflow-hidden">
+          <div className="relative h-12 border-2 border-[#00C37F] my-4 overflow-hidden">
             {/* Hollywood clapperboard pattern */}
             <div className="absolute inset-0">
               {Array.from({ length: 10 }).map((_, i) => (
                 <div
                   key={i}
-                  className="absolute h-full bg-blue-400 opacity-10"
+                  className="absolute h-full bg-[#00C37F] opacity-10"
                   style={{
                     left: `${i * 10}%`,
                     width: "5%",
@@ -84,7 +84,7 @@ const Loader = () => {
             </div>
 
             <div
-              className="absolute top-0 left-0 h-full bg-blue-400 bg-opacity-30"
+              className="absolute top-0 left-0 h-full bg-[#00C37F] bg-opacity-30"
               style={{ width: `${progress}%` }}
             />
 
@@ -98,7 +98,7 @@ const Loader = () => {
 
         {/* Film countdown */}
         <div className="flex justify-center mt-6">
-          <div className="w-24 h-24 border-4 border-blue-400 rounded-full flex items-center justify-center text-4xl font-bold relative">
+          <div className="w-24 h-24 border-4 border-[#00C37F] rounded-full flex items-center justify-center text-4xl font-bold relative">
             <div className="absolute top-0 h-8 w-4 bg-black -mt-2"></div>
             <div className="absolute bottom-0 h-8 w-4 bg-black -mb-2"></div>
             {progress < 33 ? "3" : progress < 66 ? "2" : "1"}

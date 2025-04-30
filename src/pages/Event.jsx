@@ -96,7 +96,7 @@ const Event = () => {
             {events.map((event) => {
               return (
                 <div
-                  className="w-[190px] h-[480px] sm:h-[580px] sm:w-[310px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-blue-500 bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
+                  className="w-[190px] h-[480px] sm:h-[580px] sm:w-[310px] cursor-pointer hover:scale-105 transition-all hover:border-2 border-[#00C37F] bg-gradient-to-b from-slate-900 to-slate-800 shadow-lg"
                   key={event.title}
                 >
                   <div className="h-[60%]">
@@ -124,14 +124,14 @@ const Event = () => {
                     <div className="flex flex-col items-center justify-center gap-1 mt-2">
                       <div className="flex flex-col items-center justify-center gap-1 mt-1">
                         <a href={event.link} target="_blank">
-                          <button className="px-2 sm:px-12 py-1 text-xs sm:text-lg bg-gradient-to-r from-blue-950 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 shadow-lg self-center">
+                          <button className="px-2 sm:px-12 py-1 text-xs sm:text-lg bg-gradient-to-r from-gray-800 to-[#00C37F] font-semibold rounded-full hover:from-[#00C37F] hover:to-blue-600 shadow-lg self-center">
                             REGISTER
                           </button>
                         </a>
                         <button className="text-sm self-start mb-1 flex items-center justify-center gap-2 px-4 text-blue-600 rounded-2xl">
                           <a
                             href={event.brochureLink}
-                            className=" flex items-center justify-center gap-2 text-white text-[15px] sm:text-lg hover:text-blue-600"
+                            className=" flex items-center justify-center gap-2 text-white text-[15px] sm:text-lg hover:text-[#00C37F]"
                           >
                             <IoMdDownload />
                             Event Brochure

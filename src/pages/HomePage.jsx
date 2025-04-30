@@ -92,8 +92,7 @@ const HomePage = () => {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-screen py-5 text-center">
-        <SponsorScroller />
-        <div className="text-lg md:text-xl text-white mt-4">
+        <div className="text-lg md:text-xl text-white mt-20">
           <span className="text-white flex flex-col items-center justify-center -gap-4">
             <span className="college-font flex items-center justify-center gap-2">
               <img
@@ -108,26 +107,19 @@ const HomePage = () => {
             </span>
           </span>
         </div>
-        <h1 className="hollywood-font text-5xl lg:text-9xl text-white tracking-wider mt-4 sm:-mt-2 [text-shadow:_0_0_30px_rgb(128,128,128)]">
+      <h1 className="hollywood-font text-5xl lg:text-9xl text-white tracking-wider mt-12 sm:mt-8 [text-shadow:_0_0_30px_rgb(181,181,181)] flex flex-col items-center justify-center gap-2">
           INNOVARIUM
         </h1>
-        <div className="text-sm md:text-2xl text-white tangs-font">
-          Presented by
-          <span className="flex items-center justify-center text-white uppercase gap-2">
-            <img className="w-5" src="" alt="" />
-            Name of the Title Sponsor
-          </span>
-        </div>
 
         {/* Event date */}
-        <div className="text-lg md:text-3xl font-semibold comming-soon-font text-white mb-4 mt-4">
-          <span className="text-blue-400 ">10th and 11th May</span> , 2025
+        <div className="text-lg md:text-3xl font-semibold calsans-font text-white mb-12 mt-8 sm:mt-4">
+          <span className="text-[#00C37F] ">10th and 11th May</span> , 2025
         </div>
         {/* Countdown timer */}
         <CountdownTimer />
         {/* Call to action button */}
         <a href="/event_brochure.pdf" download={true}>
-          <button className="mt-4 px-8 py-3 bg-gradient-to-r from-gray-800 to-blue-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
+          <button className="mt-12 sm:mt-8 px-8 py-3 text-xl bg-gradient-to-r from-gray-800 to-[#00C37F] text-white font-bold rounded-full hover:from-[#00C37F] hover:to-blue-600 transform hover:scale-105 transition duration-300 shadow-lg">
             Download Brochure
           </button>
         </a>

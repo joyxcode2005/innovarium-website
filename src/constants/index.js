@@ -1,7 +1,6 @@
 export const navLinks = [
   { name: "Home", path: "/" },
   { name: "Events", path: "/events" },
-  { name: "Sponsors", path: "/sponsors" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
@@ -12,7 +11,7 @@ export const events = [
     title: "Operation Kingscode",
     eventname: "Capture the flag",
     image: "/events/1.png",
-    link: "",
+    link: "https://docs.google.com/forms/d/1zbkVbx4oXXIptQO_8C4hnTyZqIYbhPFGhQtqQZSn7Rw",
     brochureLink: ""
   },
   {

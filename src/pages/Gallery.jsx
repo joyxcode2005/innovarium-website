@@ -122,7 +122,7 @@ const Gallery = () => {
                 alt={photo.alt}
                 className="w-full h-54 object-cover"
               />
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-400 rounded-xl transition duration-300"></div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#00C37F] rounded-xl transition duration-300"></div>
             </div>
           ))}
         </div>

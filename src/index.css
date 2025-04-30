@@ -22,6 +22,51 @@
   src: url('/fonts/ComingSoon-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'CalSans';
+  src: url('/fonts/Cal_Sans/CalSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AudioWide';
+  src: url('/fonts/AudioWide/AudioWide-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron/Orbitron-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'qopro';
+  src: url('/fonts/qopro/qopro.ttf');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf');
+}
+
+.space-grotesk-font{
+  font-family: "SpaceGrotesk", sans-serif;
+}
+
+.qopro-font{
+  font-family: "qopro", sans-serif;
+}
+
+.obritron-font{
+  font-family: "Orbitron", sans-serif;
+}
+
+.audio-wide-font{
+  font-family: "AudioWide", sans-serif;
+}
+
+.calsans-font{
+  font-family: "CalSans", sans-serif;
+}
+
 .comming-soon-font{
   font-family: "CommingSoon", sans-serif;
 }

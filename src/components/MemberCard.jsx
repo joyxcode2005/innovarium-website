@@ -1,15 +1,15 @@
 export const MemberCard = ({ member }) => (
-  <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer hover:border-2 border-blue-500"> 
+  <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer hover:border-2 border-[#00C37F]"> 
     <div className="p-6 flex flex-col items-center">
       <div className="relative mb-4">
-        <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+        <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-[#00C37F] shadow-lg">
           <img
             src={member.image}
             alt={member.name}
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-[#00C37F] rounded-full flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 text-white"
@@ -27,7 +27,7 @@ export const MemberCard = ({ member }) => (
         </div>
       </div>
       <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-      <p className="text-blue-400 mb-3">{member.role}</p>
+      <p className="text-[#00C37F] mb-3">{member.role}</p>
       <p className="text-gray-300 text-center text-sm mb-1">{member.phone}</p>
       <p className="text-gray-400 text-center text-sm">{member.email}</p>
     </div>
