@@ -113,7 +113,7 @@ const HomePage = () => {
 
         {/* Event date */}
         <div className="text-lg md:text-3xl font-semibold calsans-font text-white mb-12 mt-8 sm:mt-4">
-          <span className="text-[#00C37F] ">10th and 11th May</span> , 2025
+          <span className="text-[#00C37F] ">19th and 20th May</span> , 2025
         </div>
         {/* Countdown timer */}
         <CountdownTimer />
